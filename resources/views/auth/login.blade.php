@@ -42,19 +42,6 @@
             <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-primary">Logare</button>
             </div>
-
-            <!-- Forgot Password Link -->
-            @if (Route::has('password.request'))
-                <div class="text-center mt-3">
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                        Ai uitat parola?
-                    </a>
-                    <p class="mt-2">
-                        Nu ai un cont? 
-                        <a href="{{ route('register') }}">Inregistrare aici</a>.
-                    </p>
-                </div>
-            @endif
         </form>
     </div>
 </div>

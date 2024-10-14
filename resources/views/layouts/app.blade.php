@@ -9,7 +9,7 @@
     @yield('styles')
 </head>
 <body>
-    <div class="container">
+    <div>
         @yield('content')
     </div>
 

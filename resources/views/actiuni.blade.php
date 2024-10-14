@@ -2,7 +2,7 @@
 
 @section('content')
     <header class="bg-primary text-white text-center py-5">
-        <h1>Bine ai venit la Casa de Schimb Valutar!</h1>
+        <h1>Bine ai venit la {{ $casadeschimb->name }}</h1>
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item dropdown">
@@ -21,16 +21,15 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#services">Transferuri</a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('logout') }}" class="nav-link text-white" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Delogare</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
             </ul>
         </nav>
     </header>
-
-    <section class="container text-center my-5">
-        <h2>Despre Casa de Schimb Valutar</h2>
-        <p>Oferim cele mai bune rate de schimb și servicii rapide pentru toate valutele internaționale.</p>
-        <p>Fie că ai nevoie să schimbi bani pentru o călătorie sau pentru alte tranzacții, noi suntem aici să te ajutăm!</p>
-    </section>
-
     <section id="rates" class="container my-5">
         <h2 class="text-center">Rate de Schimb</h2>
         <table class="table table-bordered text-center">
