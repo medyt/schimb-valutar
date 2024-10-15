@@ -1,8 +1,26 @@
 .back {
-    background-image: url('/images/back.jpg'); /* Înlocuiește cu calea corectă */
+    background-image: url('/images/back.jpg');
     background-repeat: no-repeat;
-    background-size: cover; /* Ajustează pentru a acoperi toată pagina */
+    background-size: cover;
     background-position: center center;
     height: 100vh;
     margin: 0; 
+}
+
+.form-login {
+    margin-bottom: 200px;
+    background-color: rgb(49,145,221);
+    font-weight: 700;
+    color: white;
+}
+
+.input-login{
+    background-color: rgb(68, 146, 228);
+    border-radius: 8px;
+}
+
+.btn.login {
+    background-color: #0069d9;
+    border-radius: 8px;
+    border: 0.5px solid;
 }
