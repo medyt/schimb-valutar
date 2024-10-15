@@ -6,10 +6,11 @@
     <title>@yield('title', 'Titlu Default')</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     @yield('styles')
 </head>
 <body>
-    <div>
+    <div class="back">
         @yield('content')
     </div>
 

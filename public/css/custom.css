@@ -1,0 +1,8 @@
+.back {
+    background-image: url('/images/back.jpg'); /* Înlocuiește cu calea corectă */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajustează pentru a acoperi toată pagina */
+    background-position: center center;
+    height: 100vh;
+    margin: 0; 
+}
