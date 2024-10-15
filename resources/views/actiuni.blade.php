@@ -1,12 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Bine ai venit la {{ $casadeschimb->name }}</h1>
+    <header class="bg-primary text-black">
+        <div class="aciuni-info">
+            <div>{{ $data }}</div>
+            <div>
+                <div style="display: inline;">{{ $casadeschimb->name }} - {{ $casadeschimb->Address }}</div>
+                <div class="actiuni-role">{{ $role }}</div>
+            </div>
+        </div>
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Tranzacții
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -16,13 +22,22 @@
                     </div>
                 </li>                
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#rates">Curs valutar</a>
+                    <a class="nav-link text-black" href="#rates">Curs valutar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#services">Transferuri</a>
+                    <a class="nav-link text-black" href="#services">Transferuri</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('logout') }}" class="nav-link text-white" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Delogare</a>
+                    <a class="nav-link text-black" href="#services">Rapoarte PSV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#services">Functii IF</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="#services">Utilizare</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('logout') }}" class="nav-link text-black" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Delogare</a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         @csrf
                     </form>
@@ -30,7 +45,7 @@
             </ul>
         </nav>
     </header>
-    <section id="rates" class="container my-5">
+    <section id="rates" class="container my-5" style="display:none">
         <h2 class="text-center">Rate de Schimb</h2>
         <table class="table table-bordered text-center">
             <thead>

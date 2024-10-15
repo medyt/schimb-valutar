@@ -24,3 +24,23 @@
     border-radius: 8px;
     border: 0.5px solid;
 }
+
+.aciuni-info {
+    font-weight: 600;
+    padding-top: 8px;
+    padding-left: 12px;
+}
+
+.actiuni-role {
+    float: right;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.text-black {
+    color: black!important;
+}
+
+.dropdown-menu {
+    background-color: rgb(49,145,221);
+}
