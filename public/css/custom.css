@@ -44,3 +44,27 @@
 .dropdown-menu {
     background-color: rgb(49,145,221);
 }
+
+.admin-link {
+    color: black;
+}
+
+.backg {
+    background-color: rgb(0,0,254)
+}
+
+.modal-design {
+    background-color: rgb(49,145,221);
+    border-radius: 13px;
+    width: 700px;
+}
+
+.modal-cumparare {
+    background-color: rgb(49,145,221);
+    border-radius: 13px;
+}
+
+.add-currency {
+    color: black !important;
+    text-decoration: none !important;
+}

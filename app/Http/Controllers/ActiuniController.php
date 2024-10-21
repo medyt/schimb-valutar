@@ -50,9 +50,13 @@ class ActiuniController extends Controller
         $luna = $luni[$date->format('F')];
         $data = $ziua . ', ' . $date->format('d') . ' ' . $luna . ' ' . $date->format('Y');
 
+        $dataFactura = $date->format('d.m.Y');
+        $oraFactura = $date->format('H:i:s');
+        $fact = ['dataFactura' => $dataFactura, 'oraFactura' => $oraFactura];
+
         $userRole = $user->role == 1 ? 'Admin' : 'Tehnician Service';
 
         // Returnăm datele către view-ul 'actiuni'
-        return view('actiuni', ['rate' => $rate, 'casadeschimb' => $casadeschimb, 'data' => $data, 'role' => $userRole]);
+        return view('actiuni', ['rate' => $rate, 'casadeschimb' => $casadeschimb, 'data' => $data, 'role' => $userRole, 'factura' => $fact]);
     }
 }

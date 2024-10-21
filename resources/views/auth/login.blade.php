@@ -31,7 +31,7 @@
             </div>
             <!-- Submit Button -->
             <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary btn-login">Logare</button>
+                <button type="submit" class="btn btn-primary btn-login" style="display:none">Logare</button>
             </div>
         </form>
     </div>
